@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+        <div>
+          {% if results %}
+            <div id="results">
+              <table class="table table-striped" style="max-width: 300px;">
+
+                {% for result in results%}
+                  <tr>
+                    <td>{{ result }}</td>
+                  </tr>
+                {% endfor %}
+              </table>
+            </div>
+          {% endif %}
+        </div>   
+</html>
